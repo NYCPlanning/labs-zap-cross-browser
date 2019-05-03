@@ -5,7 +5,6 @@
 ## Yet another example of automating our test environment
 
 <img src ="BrowserStackAutomations.png"/>
-[[https://github.com/NYCPlanning/labs-zap-cross-browser/blob/master/BrowserStackAutomations.png|alt=Screenshot of tests passing across multiple browsers]]
 
 ## Setup
 * Clone the repo
