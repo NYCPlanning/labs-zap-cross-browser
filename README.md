@@ -8,13 +8,12 @@
 
 ## Setup
 * Clone the repo
-* Install dependencies `npm install`
-* Update `*.conf.js` files inside the `conf/` directory with your BrowserStack Username and Access Key(https://www.browserstack.com/accounts/settings)
+* Install dependencies `yarn`
+* Copy the `.env-example` file and rename it `.env`
+* Fill out the new `.env` file with ZAP and BrowserStack credentials
 
 ## Running your tests
-- Copy the `.env-example` file and rename it `.env`
-- Fill out the new `.env` file with ZAP and BrowserStack credentials
-- To tests, run `yarn test`
+- To run tests, run `yarn test`
 
  Understand how many parallel sessions you need by using our [Parallel Test Calculator](https://www.browserstack.com/automate/parallel-calculator?ref=github)
 
