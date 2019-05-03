@@ -1,9 +1,11 @@
-# nightwatch-browserstack
-[Nightwatch](http://nightwatchjs.org/) Integration with BrowserStack.
-
-![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
+# ZAP testing cross-browser proof of concept
 
 <img src ="http://nightwatchjs.org/img/logo-nightwatch.png" height = "110">
+
+## Yet another example of automating our test environment
+
+<img src ="BrowserStackAutomations.png"/>
+[[https://github.com/NYCPlanning/labs-zap-cross-browser/blob/master/BrowserStackAutomations.png|alt=Screenshot of tests passing across multiple browsers]]
 
 ## Setup
 * Clone the repo
@@ -11,21 +13,16 @@
 * Update `*.conf.js` files inside the `conf/` directory with your BrowserStack Username and Access Key(https://www.browserstack.com/accounts/settings)
 
 ## Running your tests
-- To run a single test, run `npm run single`
-- To run local tests, run `npm run local`
-- To run parallel tests, run `npm run parallel`
+- Copy the `.env-example` file and rename it `.env`
+- Fill out the new `.env` file with ZAP and BrowserStack credentials
+- To tests, run `yarn test`
 
  Understand how many parallel sessions you need by using our [Parallel Test Calculator](https://www.browserstack.com/automate/parallel-calculator?ref=github)
 
 ## Notes
 * You can view your test results on the [BrowserStack automate dashboard](https://www.browserstack.com/automate)
 * To test on a different set of browsers, check out our [platform configurator](https://www.browserstack.com/automate/node#setting-os-and-browser)
-* You can export the environment variables for the Username and Access Key of your BrowserStack account
-  
-  ```
-  export BROWSERSTACK_USERNAME=<browserstack-username> &&
-  export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
-  ```
+
 
 ## Connecting to BrowserStack via a proxy server
 You can specify proxy settings in Nightwatch by adding the `proxy` key in your `*.conf.js` 
